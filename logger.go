@@ -15,7 +15,7 @@ const (
 var LogLevel Level = InfoLevel
 
 func Error(msg string) {
-	if LogLevel <= TraceLevel {
+	if LogLevel <= ErrorLevel {
 		fmt.Printf("[ERROR]: %s\n", msg)
 	}
 }
